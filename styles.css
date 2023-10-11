@@ -1,0 +1,139 @@
+
+body, button {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f7f7f7;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    max-width: 300px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+.display-screen {
+    grid-column: 1 / span 4;
+    background-color: #f7f7f7;
+    padding: 10px;
+    text-align: right;
+    font-size: 24px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    grid-column: span 1;
+    padding: 15px;
+    font-size: 20px;
+    background-color: #e0e0e0;
+    cursor: pointer;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: #d3d3d3;
+}
+
+button:active {
+    background-color: #c1c1c1;
+}
+
+button.operator {
+    background-color: #f5a623;
+    color: #fff;
+}
+
+button.operator:hover {
+    background-color: #f78c00;
+}
+
+button.operator:active {
+    background-color: #eb7400;
+}
+
+button.equals {
+    background-color: #27ae60;
+    color: #fff;
+}
+
+button.equals:hover {
+    background-color: #1e9745;
+}
+
+button.equals:active {
+    background-color: #198c3f;
+}
+
+button.clear {
+    background-color: #e74c3c;
+    color: #fff;
+}
+
+button.clear:hover {
+    background-color: #d33a2e;
+}
+
+button.clear:active {
+    background-color: #c62822;
+}
+
+button.decimal, button.percentage, button.backspace {
+    background-color: #bdc3c7;
+}
+
+button.decimal:hover, button.percentage:hover, button.backspace:hover {
+    background-color: #a7adaf;
+}
+
+button.decimal:active, button.percentage:active, button.backspace:active {
+    background-color: #979c9e;
+}
+
+button.memory-add, button.memory-subtract, button.memory-recall, button.memory-clear {
+    background-color: #3498db;
+    color: #fff;
+}
+
+button.memory-add:hover, button.memory-subtract:hover, button.memory-recall:hover, button.memory-clear:hover {
+    background-color: #2888c6;
+}
+
+button.memory-add:active, button.memory-subtract:active, button.memory-recall:active, button.memory-clear:active {
+    background-color: #2277b2;
+}
+
+button.dark-mode-toggle {
+    grid-column: span 4;
+    background-color: #333;
+    color: #fff;
+}
+
+button.dark-mode-toggle:hover {
+    background-color: #222;
+}
+
+button.dark-mode-toggle:active {
+    background-color: #111;
+}
+
+.dark-mode {
+    background-color: #222;
+    color: #fff;
+}
